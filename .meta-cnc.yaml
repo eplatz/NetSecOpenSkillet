@@ -52,6 +52,9 @@ variables:
 # snippets used for api configuration including xpath and element as file name
 # files will load in the order listed
 snippets:
+  - name: virtual-router
+    xpath: /config/devices/entry[@name='localhost.localdomain']/network/virtual-router
+    file: virtual-router.xml
   - name: zones
     xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/zone
     file: zones.xml
