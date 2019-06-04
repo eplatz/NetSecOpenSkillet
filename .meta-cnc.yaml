@@ -37,11 +37,11 @@ variables:
     type_hint: text
   - name: eth_interface_trust
     description: Trusted Ethernet Interface
-    default: Ethernet1/9
+    default: ethernet1/9
     type_hint: text
   - name: eth_interface_untrust
     description: Untrusted Ethernet Interface
-    default: Ethernet1/10
+    default: ethernet1/10
     type_hint: text
    
 # ---------------------------------------------------------------------
