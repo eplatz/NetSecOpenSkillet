@@ -30,6 +30,9 @@
         </hip-profiles>
         <profile-setting>
           <profiles>
+            <file-blocking>
+              <member>NetSecOpen-Alert</member>
+            </file-blocking>
             <virus>
               <member>NetSecOpen-Antivirus</member>
             </virus>

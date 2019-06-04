@@ -205,3 +205,20 @@
           </alert>
         </entry>
       </url-filtering>
+      <file-blocking>
+        <entry name="NetSecOpen-Alert">
+          <rules>
+            <entry name="Alert">
+              <application>
+                <member>any</member>
+              </application>
+              <file-type>
+                <member>any</member>
+              </file-type>
+              <direction>both</direction>
+              <action>alert</action>
+            </entry>
+          </rules>
+        </entry>
+      </file-blocking>
+
