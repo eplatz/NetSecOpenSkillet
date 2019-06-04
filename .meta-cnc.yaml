@@ -53,7 +53,7 @@ variables:
 # files will load in the order listed
 snippets:
   - name: network
-    xpath: /config/devices/entry[@name='localhost.localdomain']/network
+    xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface/ethernet
     file: network.xml
   - name: virtual_routers
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/virtual-router
