@@ -60,7 +60,7 @@ snippets:
     xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='template']/config/devices/entry[@name='localhost.localdomain']/network/virtual-router
     file: virtual-router.xml
   - name: zone
-    xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='template']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1
+    xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='template']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/zone
     file: zone.xml
   - name: profiles
     xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='NetSecOpen_DeviceGroup']/profiles
