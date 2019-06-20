@@ -24,6 +24,10 @@ labels:
 # type_hints can be text, ip_address, or dropdown
 
 variables:
+  - name: vsys_name
+    description: vsys name
+    default: vsys1
+    type_hint: text
   - name: zone_name_trust
     description: Trusted Zone Name
     default: Trust-L3
@@ -59,8 +63,11 @@ snippets:
   - name: virtual-router
     xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='template']/config/devices/entry[@name='localhost.localdomain']/network/virtual-router
     file: virtual-router.xml
+  - name: vsys
+    xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='template']/config/devices/entry[@name='localhost.localdomain']/vsys
+    file: vsys.xml
   - name: zone
-    xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='template']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/zone
+    xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='template']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='{{ vsys_name }}']/zone
     file: zone.xml
   - name: profiles
     xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='NetSecOpen_DeviceGroup']/profiles
