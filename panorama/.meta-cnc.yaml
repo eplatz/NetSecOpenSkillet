@@ -24,7 +24,6 @@ labels:
 # type_hints can be text, ip_address, or dropdown
 
 variables:
-  variables:
   - name: zone_name_trust
     description: Trusted Zone Name
     default: Trust-L3
